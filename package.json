@@ -1,0 +1,29 @@
+{
+  "name": "ux-plugin",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "build-figma-plugin --typecheck --minify",
+    "watch": "build-figma-plugin --typecheck --watch"
+  },
+  "dependencies": {
+    "@create-figma-plugin/ui": "^4.0.1",
+    "@create-figma-plugin/utilities": "^4.0.1",
+    "preact": "^10.26.9"
+  },
+  "devDependencies": {
+    "@create-figma-plugin/build": "^4.0.1",
+    "@create-figma-plugin/tsconfig": "^4.0.1",
+    "@figma/plugin-typings": "^1.90.0",
+    "typescript": "^5.3.0"
+  },
+  "figma-plugin": {
+    "editorType": [
+      "figma"
+    ],
+    "id": "ux-plugin",
+    "name": "One-Shot Brief",
+    "main": "src/main.ts",
+    "ui": "src/ui.tsx"
+  }
+}
